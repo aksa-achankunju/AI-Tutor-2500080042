@@ -8,11 +8,22 @@ klu = FastAPI(title="AI Tutor",
 def home():
     return {"message":"Welcome to AI Tutor Project"}
 
-@klu.get("/demo") 
+@klu.get("/demo")
 def demo():
-    return{"message":"KL University"}
+    return {"message":"KL university"}
 
-@klu.get("askquestion")
+@klu.get("/askquestion")
 def ask():
-    return{"message":"What is LLM ?",
-           "Answer":"Large Language Model"}
+    return {"message":"What is LLM","Answer":"Large Language Model"}
+
+@klu.get("/student")
+def student():
+    return {"id":1,"name":"Ram","gender":"male","course":"DSA"}
+
+@klu.get("/students")
+def getstudents():
+    return [
+            {"id":1,"name":"Ram","gender":"male","course":"DSA"},
+            {"id":2,"name":"Klu","gender":"male","course":"DSA"},
+            {"id":3,"name":"Seetha","gender":"female","course":"DSA"}
+            ]
