@@ -26,8 +26,8 @@ def student():
 def getstudents():
     return [
             {"id":1,"name":"Ram","gender":"male","course":"DSA"},
-            {"id":2,"name":"Klu","gender":"male","course":"DSA"},
-            {"id":3,"name":"Seetha","gender":"female","course":"DSA"}
+            {"id":2,"name":"klu","gender":"male","course":"DSA"},
+            {"id":3,"name":"Sitha","gender":"female","course":"DSA"}
             ]
 
 if __name__ == "__main__":
